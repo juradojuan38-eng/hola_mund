@@ -1,8 +1,10 @@
+{{-- Vista con el formulario para cargar un animal nuevo --}}
 @extends('layout')
 
 @section('titulo', 'Nuevo Animal')
 
 @section('contenido')
+    {{-- Envía los datos por POST al método store() del controlador --}}
     <form action="/animales" method="POST">
         @csrf
         <label>Nombre:</label>
